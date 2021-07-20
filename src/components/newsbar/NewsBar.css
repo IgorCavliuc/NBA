@@ -1,24 +1,11 @@
+.li-news {
+  margin: 10px 20px 10px 75px;
+  
+}
 .news {
-  width: 300px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   border-right: 1px solid var(--base-border);
-  margin: 0 50px 0 150px;
-}
-.news-container {
-    height: 175px;
-    width: 234px;
-    text-align: center;
-    margin: 10px;
-    border: 1px solid var(--base-border);
-    border-radius: 0px 0px 4px 4px;
-}
-.news-container-img{
-    margin: 0 auto;
-    width: 234px;
-    height: 120px;
-}
-.news-container > p{
-    margin: 10px 10px 10px 10px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 18px;
+  margin: 10px 20px 10px 75px;
 }

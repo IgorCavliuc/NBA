@@ -1,23 +1,29 @@
-import React from 'react'
-import './NewsBar.css'
+import React, {Component} from "react";
+import NewsBarItem from "../newsbaritem/NewsBarItem";
 
-import {news} from '../constants'
+import "./NewsBar.css";
 
-export function NewsBar() {
+export default class NewsBar extends Component {
+
+  state={
+    openAcrticleId: null,
+
+  }
+
+  render(){
+    const { data, onActive, active } = this.props;
+  const el = data.map((item) => {
+    const { id, ...itemProps } = item;
     
-    const currentNews = news.map((item) =>{
-        return(
-            <div key={item.id} className="news-container">
-            <img className="news-container-img" src={item.logo}></img>
-            <p>{item.title}</p>
-        </div>
-        )
+    return (
+      <li className='news' key={id}>
+        <NewsBarItem {...itemProps} isOpen={this.state.openAcrticleId === id} onActive={() => onActive(active)}/>
+      </li>
+    );
+  });
 
-    })
-    return(
-        <main className="news">
-            {currentNews}
-        </main>
-    )
-    
+  return <ul className="news">{el}</ul>;
+
 }
+}
+
