@@ -1,37 +1,41 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-import './NewsBarItem.css'
- 
-export  default class NewsBarItem extends Component {
+import "./NewsBarItem.css";
 
-    state = {
-        active: false,
-    }
-    activeNews = () => {
-        this.setState((state) => {
-            return{
-                active: !state.active
-            }
-        })
+export default class NewsBarItem extends Component {
+  state = {
+    active: false,
+  };
+  activeNews = () => {
+    this.setState((state) => {
+      return {
+        active: !state.active,
       };
+    });
+  };
 
-      render(){
-          const {title, logo, onActive} = this.props;
+  render() {
+    const { title, logo, onActive } = this.props;
 
-          const {active} = this.state;
+    const { active } = this.state;
 
-          let classNames = 'news-container';
-          
-          if (active) {    
-              classNames += ' active'
-             }      
-          
+    let classNames = "news-container";
 
-          return(
-            <div  className={classNames} onClick={this.activeNews} onClick={onActive}>
-            <img className="news-container-img" src={logo}></img>
-            <p>{title}</p>
-          </div>
-          )
-      }
+    if (active) {
+      classNames += " active";
+    }
+
+    return (
+      <div className="content" onClick={this.activeNews}>
+        <div className={classNames} onClick={onActive}>
+          <img
+            className="news-container-img"
+            src={logo}
+            onClick={onActive}
+          ></img>
+          <p>{title}</p>
+        </div>
+      </div>
+    );
+  }
 }

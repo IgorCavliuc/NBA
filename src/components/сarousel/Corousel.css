@@ -21,7 +21,6 @@
   .container {
    
     display: flex;
-    justify-content: center;
 
     margin: 50px auto;
     transition: transform 500s;
