@@ -6,7 +6,6 @@ export  default class NewsBarItem extends Component {
 
     state = {
         active: false,
-        
     }
     activeNews = () => {
         this.setState((state) => {
@@ -17,7 +16,7 @@ export  default class NewsBarItem extends Component {
       };
 
       render(){
-          const {title, logo, } = this.props;
+          const {title, logo, onActive} = this.props;
 
           const {active} = this.state;
 
@@ -25,12 +24,11 @@ export  default class NewsBarItem extends Component {
           
           if (active) {    
               classNames += ' active'
-             }
-          
+             }      
           
 
           return(
-            <div  className={classNames}  onClick={this.activeNews}>
+            <div  className={classNames} onClick={this.activeNews} onClick={onActive}>
             <img className="news-container-img" src={logo}></img>
             <p>{title}</p>
           </div>

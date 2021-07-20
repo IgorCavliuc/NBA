@@ -10,36 +10,32 @@ import { news } from "./components/constants";
 export default class App extends Component {
   state = {
     news,
-    active:true
+    newArr: [
+     
+    ],
   };
 
-  deleteItem = (id) => {
+  activeItem = (id) => {
     this.setState(({ news }) => {
       const idx = news.findIndex((el) => el.id === id);
 
+      const newAr = news[idx];
 
-      const newArr = [
-        ...news.slice(0, idx),
-        ...news.slice(idx + 1)];
 
       return {
-        news: newArr,
+        newArr: newAr,
       };
     });
   };
-
-  activeItem = () => {
-
-  }
 
   render() {
     return (
       <main className="layout">
         <Sidebar />
-        <NewsBar data={this.state.news}  active={this.state.active} onActive={this.activeItem} />
+        <NewsBar data={this.state.news} onActive={this.activeItem} />
         <div className="block-container">
           <Carousel />
-          <NewsContent data={news} />
+          <NewsContent data={this.state.newArr} />
         </div>
       </main>
     );
