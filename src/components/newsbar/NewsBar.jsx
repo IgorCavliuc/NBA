@@ -8,7 +8,7 @@ function NewsBar({ data, onActive }) {
     const { id, ...itemProps } = item;
     
     return (
-      <li className='news' key={id}>
+      <li  key={id}>
         <NewsBarItem {...itemProps} onActive={() => onActive( id)}/>
       </li>
     );

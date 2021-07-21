@@ -1,11 +1,13 @@
 .li-news {
-  margin: 10px 20px 10px 75px;
+/* margin: 10px 20px 10px 75px; */
+margin: 0 5px;
   
 }
 .news {
+  display: flex;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
-  border-right: 1px solid var(--base-border);
-  margin: 10px 20px 10px 75px;
+  
 }

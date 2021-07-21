@@ -26,7 +26,7 @@ export default class NewsBarItem extends Component {
     }
 
     return (
-      <div className="content" onClick={this.activeNews}>
+      <div className="content" >
         <div className={classNames} onClick={onActive}>
           <img
             className="news-container-img"

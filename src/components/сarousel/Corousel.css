@@ -22,13 +22,13 @@
    
     display: flex;
 
-    margin: 50px auto;
+    margin: 0;
     transition: transform 500s;
   }
   
   .banner {
     background-color: #FFFFFF;
-    box-shadow: -2px 4px 7px rgba(169, 169, 169, 0.25);
+   
     border: 3px solid var(--base-border);
   
     display: flex;

@@ -1,8 +1,7 @@
 .news-content {
   width: 974px;
-  margin: 30px auto;
   overflow: hidden;
-  position: relative;
+  display: inline-block;
 }
 
 
@@ -18,22 +17,22 @@
   background: #0b6db4;
   opacity: 0.8;
   color: white;
-  margin-top: -161px;
+  margin-top: -156px;
   font-weight: 500;
 font-size: 32px;
 line-height: 48px;
 }
 .content-img{
-  height: 370px;
-  width: 974px;
-  position: relative;
+ width: 974px;
   object-fit: cover;
+  
+  overflow: hidden;
 }
-.news-content > img{
+.content-img > img{
   transition: 1s; 
     display: block;
-    height: 370px;
+    object-fit: cover;
 }
-.news-content > img:hover{
+.content-img > img:hover{
   transform: scale(1.06);
   }

@@ -4,9 +4,20 @@
   margin: 0 auto;
 }
 .block-container{
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  margin: 0 0 0 130px;
   
+}
+.content-margin{
+  margin: 0 20px 0 20px;
+}
+
+.content-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-news{
+  font-weight: normal;
+  margin-bottom: 5px;
 }

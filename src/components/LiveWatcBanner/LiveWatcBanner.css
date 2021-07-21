@@ -1,0 +1,63 @@
+.live-watch-banner {
+  width: 100%;
+  height: 72vh;
+  background-size: auto;
+  background-size: cover;
+  position: relative;
+
+  
+}
+.live-watch-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.banner-content {
+    color: #fff;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 50px 3em;
+  text-align: center;
+  z-index: 6;
+  padding: 170px 3em 150px 3em;
+}
+.banner-title {
+    font-size: calc(.08em + 2.92vw);
+line-height: bold;
+    
+}
+.banner-text {
+    font-size: 20px;
+}
+.banner-btn a {
+    color: #fff;
+}
+.banner-btn {
+    
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff;
+    background: #c8102e;
+    border: 1px solid #c8102e;
+    font-size: 20px;
+    padding: .75em 1.5em;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: background .25s,color .25s;
+    transition: background .25s,color .25s;
+}
+.banner-comm {
+    font-size: 16px;
+    margin-top: 20px;
+}
