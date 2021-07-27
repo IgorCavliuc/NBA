@@ -1,10 +1,10 @@
 import React from "react";
 
 export function MenuLink({ active, children, ...restProps }) {
-  const className = `link ${active ? 'active' : ''}`;
+  const className = `link ${active ? ' active' : ''}`;
 
   return (
-    <a className={className} {...restProps} >
+    <a activeClassName={className} {...restProps} >
       {children}
     </a>
   )
