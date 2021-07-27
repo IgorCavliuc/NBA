@@ -69,9 +69,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: var(--base-black);
+  cursor: pointer;
 }
 
-.link.active {
+.link:hover {
   background: var(--base-blue);
   color: var(--base-white);
 }

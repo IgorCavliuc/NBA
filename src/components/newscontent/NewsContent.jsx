@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 import "./NewsContent.css";
 
-export class NewsContent extends Component {
+import News from '../news/news'
+
+export  class NewsContent extends Component {
   render() {
     const { data } = this.props;
 

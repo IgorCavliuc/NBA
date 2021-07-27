@@ -19,6 +19,7 @@
   }
   
   .container {
+
    
     display: flex;
 
@@ -66,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   
   .button {
@@ -81,6 +83,7 @@
     line-height: 18px;
     text-transform: uppercase;
     color: var(--base-white);
+    cursor: pointer;
   }
   
   .button:focus > span {

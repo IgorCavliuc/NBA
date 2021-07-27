@@ -9,7 +9,7 @@ function NewsBar({ data, onActive }) {
     
     return (
       <li  key={id}>
-        <NewsBarItem {...itemProps} onActive={() => onActive( id)}/>
+        <NewsBarItem {...itemProps} onActive={() => onActive(id)}/>
       </li>
     );
   });

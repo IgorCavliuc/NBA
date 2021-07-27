@@ -3,7 +3,7 @@ import React from "react";
 import img from "../svgs/davis-game2-1920-210527-1568x882.jpg";
 import "./LiveWatcBanner.css";
 
-function LiveWatcBanner() {
+export default function LiveWatcBanner() {
   return (
     <div
       className="live-watch-banner"
@@ -31,4 +31,3 @@ function LiveWatcBanner() {
   );
 }
 
-export default LiveWatcBanner;
