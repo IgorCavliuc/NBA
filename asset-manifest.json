@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cavliuc/NBA/static/css/main.9d11b5a2.chunk.css",
+    "main.js": "/cavliuc/NBA/static/js/main.20d44a4c.chunk.js",
+    "main.js.map": "/cavliuc/NBA/static/js/main.20d44a4c.chunk.js.map",
+    "runtime-main.js": "/cavliuc/NBA/static/js/runtime-main.5aa107b3.js",
+    "runtime-main.js.map": "/cavliuc/NBA/static/js/runtime-main.5aa107b3.js.map",
+    "static/js/2.75e29cef.chunk.js": "/cavliuc/NBA/static/js/2.75e29cef.chunk.js",
+    "static/js/2.75e29cef.chunk.js.map": "/cavliuc/NBA/static/js/2.75e29cef.chunk.js.map",
+    "index.html": "/cavliuc/NBA/index.html",
+    "precache-manifest.7b19d3d55f407f714d165f69c9ae2ebe.js": "/cavliuc/NBA/precache-manifest.7b19d3d55f407f714d165f69c9ae2ebe.js",
+    "service-worker.js": "/cavliuc/NBA/service-worker.js",
+    "static/css/main.9d11b5a2.chunk.css.map": "/cavliuc/NBA/static/css/main.9d11b5a2.chunk.css.map",
+    "static/js/2.75e29cef.chunk.js.LICENSE": "/cavliuc/NBA/static/js/2.75e29cef.chunk.js.LICENSE",
+    "static/media/davis-game2-1920-210527-1568x882.jpg": "/cavliuc/NBA/static/media/davis-game2-1920-210527-1568x882.b5e180db.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5aa107b3.js",
+    "static/js/2.75e29cef.chunk.js",
+    "static/css/main.9d11b5a2.chunk.css",
+    "static/js/main.20d44a4c.chunk.js"
+  ]
+}
