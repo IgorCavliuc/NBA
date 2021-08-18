@@ -24,3 +24,6 @@
     color: var(--base-white);
   }
   
+  .active{
+    background: var(--base-blue);
+  }
